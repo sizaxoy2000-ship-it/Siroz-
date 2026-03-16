@@ -1,26 +1,127 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ku" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siroz Luxury</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Noto+Serif+Arabic:wght@300;700&display=swap');
-
-        :root {
-            --royal-blue: #0a192f;
-            --gold: #C5A059;
-            --off-white: #FDFBF8;
-            --dark-bg: #050a12;
+        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Noto+Serif+Kurdish:wght@300;700&display=swap');
+        
+        body { 
+            background: #050a12; 
+            color: #ffffff; 
+            font-family: 'Noto Serif Kurdish', serif; 
+            text-align: center; 
+            margin: 0; padding: 0; 
+            display: flex; justify-content: center;
         }
 
-        body {
-            background-color: var(--dark-bg);
-            margin: 0;
-            font-family: 'Noto Serif Arabic', serif;
-            color: var(--off-white);
+        .main { 
+            background: #050a12; 
+            width: 100%; max-width: 400px;
+            min-height: 100vh; padding: 50px 20px; 
+            border: 1px solid rgba(197, 160, 89, 0.2);
+            box-sizing: border-box;
+        }
+
+        /* الاسم الذهبي الملكي */
+        .brand-name { 
+            font-family: 'Amiri', serif; 
+            color: #C5A059; 
+            font-size: 3rem; letter-spacing: 12px; 
+            margin: 0; text-transform: uppercase;
+        }
+
+        .tagline { color: #ffffff; font-size: 1rem; margin-top: 10px; margin-bottom: 50px; }
+
+        .card { 
+            background: rgba(255, 255, 255, 0.02); 
+            border: 1px solid rgba(197, 160, 89, 0.2); 
+            border-radius: 15px; padding: 25px; 
+            margin-bottom: 30px; display: flex; align-items: center; text-align: right;
+        }
+
+        /* أيقونات الخطة (Medium) */
+        .icon-container {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .icon-img { 
+            width: 65px; height: 65px; 
+            margin-bottom: 5px;
+        }
+
+        .image-label {
+            color: #C5A059;
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+            font-family: sans-serif;
+        }
+
+        .card-content { flex: 1; }
+        h3 { color: #C5A059; margin: 0 0 8px 0; font-size: 1.3rem; }
+        p { color: #ced4da; font-size: 0.95rem; margin: 0 0 15px 0; line-height: 1.7; }
+
+        .click-link {
+            color: #C5A059; text-decoration: none; 
+            font-size: 0.85rem; border-bottom: 1px solid #C5A059;
+            padding-bottom: 2px;
+        }
+
+        footer { margin-top: 50px; font-size: 0.8rem; color: #C5A059; opacity: 0.6; }
+    </style>
+</head>
+<body>
+
+<div class="main">
+    <h1 class="brand-name">SIROZ</h1>
+    <p class="tagline">جوانیێ شاهانە، یەقینێ ڕاستەقینە</p>
+
+    <div class="card">
+        <div class="icon-container">
+            <img src="https://raw.githubusercontent.com/Sebil-it/Siroz-/main/6914.png" class="icon-img">
+            <span class="image-label">SIROZ IMAGE</span>
+        </div>
+        <div class="card-content">
+            <h3>ئارامیا دل</h3>
+            <p>ئارامیا دلێ کو ژ عومقێ سوجدێ دەستپێدکەت.</p>
+            <a href="#" class="click-link">کلیک بکە</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="icon-container">
+            <img src="https://raw.githubusercontent.com/Sebil-it/Siroz-/main/6916.png" class="icon-img">
+            <span class="image-label">SIROZ IMAGE</span>
+        </div>
+        <div class="card-content">
+            <h3>جەوهەرێ جوانیێ</h3>
+            <p>نهێنیێن خودانکرنا شاهانە بۆ پیستی و دێرمابەنێ.</p>
+            <a href="#" class="click-link">کلیک بکە</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="icon-container">
+            <img src="https://raw.githubusercontent.com/Sebil-it/Siroz-/main/6915.png" class="icon-img">
+            <span class="image-label">SIROZ IMAGE</span>
+        </div>
+        <div class="card-content">
+            <h3>بنەمايێن ڕەوشەنبیریێ</h3>
+            <p>ئەناقەتا هێمن و فەلسەفەیا سادەیا بەرز.</p>
+            <a href="#" class="click-link">کلیک بکە</a>
+        </div>
+    </div>
+
+    <footer>
+        ZAKHO 2026 | "Hasbi Allah"
+    </footer>
+</div>
+
+</body>
+</html>
         }
 
         .container {
