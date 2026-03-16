@@ -1,30 +1,95 @@
-<style>
-/* التنسيقات التي أرسلتِها مع لمسات سيروز الملكية */
-.features {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* لضمان الترتيب على الموبايل */
-    gap: 40px;
-    padding: 40px 20px;
-    text-align: center;
-    background: #050a12;
-}
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Siroz Luxury</title>
+    <style>
+        /* التنسيق الذي أرسلتِهِ مع تعديلات الفخامة */
+        body { background: #050a12; margin: 0; padding: 0; }
+        
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 60px;
+            text-align: center;
+            flex-wrap: wrap;
+        }
 
-.feature {
-    background: #0a192f; /* اللون الأزرق العميق جداً القريب للأسود */
-    padding: 30px 20px;
-    border-radius: 15px;
-    width: 220px;
-    transition: 0.3s;
-    border: 1px solid rgba(197, 160, 89, 0.2); /* إطار ذهبي خفيف */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        .feature {
+            background: #0a192f; /* اللون الغامق الملكي */
+            padding: 25px;
+            border-radius: 15px;
+            width: 220px;
+            transition: 0.3s;
+            border: 1px solid rgba(197, 160, 89, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-.feature:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+        .feature:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            border-color: #C5A059;
+        }
+
+        /* حجم ميديم للأيقونات */
+        .feature img {
+            width: 75px; 
+            height: 75px;
+            margin-bottom: 5px;
+        }
+
+        /* كلمة IMAGE تحت الصورة */
+        .img-label {
+            color: #C5A059;
+            font-size: 0.6rem;
+            letter-spacing: 2px;
+            font-family: sans-serif;
+            margin-bottom: 15px;
+        }
+
+        .feature h3 {
+            color: #C5A059; /* ذهبي سيروز */
+            margin: 10px 0;
+            font-family: 'Amiri', serif;
+        }
+
+        .feature p {
+            color: #ffffff;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="features">
+    <div class="feature">
+        <img src="https://raw.githubusercontent.com/Sebil-it/Siroz-/main/6914.png">
+        <span class="img-label">SIROZ IMAGE</span>
+        <h3>ئارامیا دل</h3>
+        <p>ئارامیا دلێ کو ژ عومقێ سوجدێ دەستپێدکەت.</p>
+    </div>
+
+    <div class="feature">
+        <img src="https://raw.githubusercontent.com/Sebil-it/Siroz-/main/6916.png">
+        <span class="img-label">SIROZ IMAGE</span>
+        <h3>جەوهەرێ جوانیێ</h3>
+        <p>نهێنیێن خودانکرنا شاهانە بۆ پیستی و دێرمابەنێ.</p>
+    </div>
+
+    <div class="feature">
+        <img src="https://raw.githubusercontent.com/Sebil-it/Siroz-/main/6915.png">
+        <span class="img-label">SIROZ IMAGE</span>
+        <h3>بنەمايێن ڕەوشەنبیریێ</h3>
+        <p>ئەناقەتا هێمن و فەلسەفەیا سادەیا بەرز.</p>
+    </div>
+</div>
+
+</body>
+</html>
     border-color: #C5A059;
 }
 
