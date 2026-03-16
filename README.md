@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siroz Luxury Concept</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Noto+Serif+Arabic:wght@300;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Noto+Serif+Arabic:wght@300;700&family=Noto+Serif+Kurdish:wght@300;700&display=swap');
 
         :root {
             --royal-blue: #0a192f;
@@ -18,9 +18,9 @@
             margin: 0;
             padding: 0;
             font-family: 'Noto Serif Arabic', serif;
+            color: #FDFBF8;
             display: flex;
             justify-content: center;
-            color: #FDFBF8;
         }
 
         .phone-view {
@@ -32,25 +32,35 @@
             border: 1px solid rgba(197, 160, 89, 0.2);
             box-sizing: border-box;
             text-align: center;
+            position: relative;
         }
 
-        /* أيقونة الملكة العلوية 6917.png */
-        .queen-logo {
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 25px;
-            border: 1.5px solid var(--gold-primary);
-            border-radius: 50%;
-            background-image: url('6917.png'); 
-            background-size: cover;
-            background-position: center;
+        /* تنسيق زر الترجمة للكوردية */
+        #lang-toggle {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(197, 160, 89, 0.1);
+            color: var(--gold-primary);
+            border: 1px solid var(--gold-primary);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            font-family: 'Noto Serif Kurdish', serif;
+            transition: 0.3s;
+        }
+
+        #lang-toggle:hover {
+            background: rgba(197, 160, 89, 0.2);
+            box-shadow: 0 0 10px rgba(197, 160, 89, 0.3);
         }
 
         h1 {
             font-family: 'Amiri', serif;
             font-size: 3.5rem;
             color: var(--gold-primary);
-            margin: 0;
+            margin: 20px 0 0 0;
             letter-spacing: 12px;
             text-transform: uppercase;
         }
@@ -60,7 +70,6 @@
             font-size: 0.9rem;
             margin-bottom: 45px;
             font-weight: 300;
-            letter-spacing: 1px;
         }
 
         .card {
@@ -72,7 +81,7 @@
             transition: 0.3s;
         }
 
-        /* حجم الأيقونات الذهبية (الهلال، اللوتس، النجمة) */
+        /* حجم الأيقونات الذهبية (الهلال، اللوتس) */
         .royal-icon {
             width: 45px;
             height: 45px;
@@ -93,6 +102,12 @@
             margin: 0;
         }
 
+        /* تنسيق النصوص الكوردية */
+        .ku-text {
+            font-family: 'Noto Serif Kurdish', serif;
+            display: none; /* مخفية افتراضياً */
+        }
+
         footer {
             margin-top: 60px;
             font-size: 0.8rem;
@@ -106,7 +121,7 @@
 <body>
 
 <div class="phone-view">
-    <div class="queen-logo"></div>
+    <button id="lang-toggle" onclick="toggleLanguage()">کوردی</button>
     
     <h1>SIROZ</h1>
     <div class="tagline">جمالٌ ملكي، يقينٌ راسخ، ورُقي لا يغيب</div>
@@ -114,26 +129,5 @@
     <div class="card">
         <img src="6914.png" alt="Moon" class="royal-icon">
         <h3>سكون الروح</h3>
-        <p>مساحتكِ لأوراد الفجر، أذكار اليقين، وطمأنينة القلب التي تبدأ من عمق السجود.</p>
-    </div>
-
-    <div class="card">
-        <img src="6916.png" alt="Lotus" class="royal-icon">
-        <h3>جوهر النضارة</h3>
-        <p>أسرار العناية الملكية بالبشرة، دليلكِ الاحترافي للديرمابن، وسحر الزيوت الطبيعية.</p>
-    </div>
-
-    <div class="card">
-        <img src="6915.png" alt="Star" class="royal-icon">
-        <h3>قواعد الرُقي</h3>
-        <p>الأناقة الهادئة وفلسفة البساطة الراقية.. لتكوني دائماً في كامل فخامتكِ بأبسط التفاصيل.</p>
-    </div>
-
-    <footer>
-        بأيدي مهندسة IT - زاخو 2026<br>
-        "Hasbi Allah wa ni'ma al-wakeel"
-    </footer>
-</div>
-
-</body>
-</html>
+        <p class="ar-text">مساحتكِ لأوراد الفجر، أذكار اليقين، وطمأنينة القلب التي تبدأ من عمق السجود.</p>
+        <p class="ku-text">فەزایێ تە بۆ وێردێن فەجرێ، ئەزکارێن یەقینێ، و ئار
