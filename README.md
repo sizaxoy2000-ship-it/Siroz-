@@ -2,14 +2,155 @@
 <html lang="ku" dir="rtl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siroz Luxury</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Noto+Serif+Kurdish:wght@300;700&display=swap');
-        body { background: #050a12; color: #ffffff; font-family: 'Noto Serif Kurdish', serif; margin: 0; padding: 0; display: flex; justify-content: center; }
-        .main { background: #050a12; width: 100%; max-width: 400px; min-height: 100vh; padding: 60px 20px; box-sizing: border-box; }
-        .brand-name { font-family: 'Amiri', serif; color: #C5A059; font-size: 3.2rem; letter-spacing: 12px; margin-bottom: 50px; text-align: center; }
-        .card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(197, 160, 89, 0.2); border-radius: 15px; padding: 25px; margin-bottom: 30px; display: flex; align-items: center; text-align: right; }
-        .img-box { display: flex; flex-direction: column; align-items: center; margin-left: 15px; min-width: 80px; }
+        
+        body { 
+            background: #050a12; 
+            color: #ffffff; 
+            font-family: 'Noto Serif Kurdish', serif; 
+            margin: 0; padding: 0; 
+            display: flex; justify-content: center;
+        }
+
+        .main { 
+            width: 100%; max-width: 420px;
+            min-height: 100vh; padding: 60px 20px; 
+            box-sizing: border-box;
+            background: #0a192f; /* الكحلي الملكي الداكن من الصورة */
+            border: 1px solid rgba(197, 160, 89, 0.1);
+        }
+
+        /* اسم سيروز الذهبي النحيف والفخم */
+        .brand-name { 
+            font-family: 'Amiri', serif; 
+            color: #C5A059; 
+            font-size: 3rem; letter-spacing: 12px; 
+            margin: 0 0 50px 0; text-transform: uppercase;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        .features {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .feature-card { 
+            background: rgba(255, 255, 255, 0.01); /* شفافية خفيفة */
+            border: 1px solid rgba(197, 160, 89, 0.15); /* إطار ذهبي نحيف */
+            border-radius: 12px; padding: 20px; 
+            display: flex; align-items: center; text-align: right;
+            transition: 0.3s;
+        }
+
+        .feature-card:hover {
+            border-color: #C5A059;
+            box-shadow: 0 0 15px rgba(197, 160, 89, 0.3);
+        }
+
+        /* خطة الـ Medium Icon مع كلمة IMAGE */
+        .icon-box {
+            display: flex; flex-direction: column;
+            align-items: center; margin-left: 18px;
+            min-width: 70px;
+        }
+
+        /* تنسيق صوركِ المدورة الصغيرة (الفخمة) */
+        .siroz-img-round { 
+            width: 50px; height: 50px; /* صغيرة وميديم */
+            border-radius: 50%; /* تجعلها مدورة تماماً */
+            border: 1px solid rgba(197, 160, 89, 0.5); /* إطار ذهبي نحيف */
+            object-fit: cover; /* لضمان ظهور الصورة بشكل جميل داخل الدائرة */
+            margin-bottom: 6px;
+            filter: drop-shadow(0 0 5px rgba(197, 160, 89, 0.3));
+        }
+
+        .icon-label {
+            color: #C5A059; font-size: 0.6rem;
+            letter-spacing: 2px; font-family: sans-serif;
+            font-weight: bold;
+            opacity: 0.8;
+        }
+
+        .content { flex: 1; }
+        h3 { color: #C5A059; margin: 0 0 6px 0; font-size: 1.25rem; font-weight: 700; }
+        p { color: #ced4da; font-size: 0.9rem; margin: 0 0 12px 0; line-height: 1.6; }
+
+        .btn-link {
+            color: #C5A059; text-decoration: none; 
+            font-size: 0.8rem; border: 1px solid #C5A059;
+            padding: 4px 12px; border-radius: 4px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .btn-link:hover {
+            background: #C5A059; color: #050a12;
+        }
+
+        footer { 
+            margin-top: 60px; 
+            font-size: 0.75rem; 
+            color: #C5A059; 
+            opacity: 0.7;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main">
+    <h1 class="brand-name">SIROZ</h1>
+
+    <div class="features">
+        <div class="feature-card">
+            <div class="icon-box">
+                <img src="https://raw.githubusercontent.com/Sebil-it/Siroz-/main/6914.png" class="siroz-img-round" alt="Siroz Moon">
+                <span class="icon-label">IMAGE</span>
+            </div>
+            <div class="content">
+                <h3>ئارامیا دل</h3>
+                <p>ئارامیا دلێ کو ژ عومقێ سوجدێ دەستپێدکەت.</p>
+                <a href="#" class="btn-link">کلیک بکە</a>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="icon-box">
+                <img src="https://raw.githubusercontent.com/Sebil-it/Siroz-/main/6916.png" class="siroz-img-round" alt="Siroz Lotus">
+                <span class="icon-label">IMAGE</span>
+            </div>
+            <div class="content">
+                <h3>جەوهەرێ جوانیێ</h3>
+                <p>نهێنیێن خودانکرنا شاهانە بۆ پیستی و دێرمابەنێ.</p>
+                <a href="#" class="btn-link">کلیک بکە</a>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="icon-box">
+                <img src="https://raw.githubusercontent.com/Sebil-it/Siroz-/main/6915.png" class="siroz-img-round" alt="Siroz Star">
+                <span class="icon-label">IMAGE</span>
+            </div>
+            <div class="content">
+                <h3>بنەمايێن ڕەوشەنبیریێ</h3>
+                <p>ئەناقەتا هێمن و فەلسەفەیا سادەيا بەرز.</p>
+                <a href="#" class="btn-link">کلیک بکە</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        ZAKHO 2026 | Hasbi Allah
+    </footer>
+</div>
+
+</body>
+</html>        .img-box { display: flex; flex-direction: column; align-items: center; margin-left: 15px; min-width: 80px; }
         .icon-img { width: 65px; height: 65px; margin-bottom: 5px; }
         .img-label { color: #C5A059; font-size: 0.6rem; letter-spacing: 1px; font-family: sans-serif; font-weight: bold; }
         .content { flex: 1; }
